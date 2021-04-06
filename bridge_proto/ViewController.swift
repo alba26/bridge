@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return.lightContent
     }
@@ -23,7 +24,14 @@ class ViewController: UIViewController {
     
    
     @IBAction func loginAction(_ sender: UIButton) {
+        
     }
+    
+    @IBAction func forgotPasswordAction(_ sender: UIButton) {
+        
+    }
+    
+    
     
 }
   
