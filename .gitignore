@@ -1,0 +1,14 @@
+# Custom
+node_modules/
+.env
+.next
+.DS_Store
+*.tar.zst
+services/*/public/cache/*
+services/*/node_modules
+
+# File Sampah
+*.xcschememanagement.plist
+*.UserInterfaceState.xcuserstate
+bridge_proto.xcodeproj/xcuserdata/*.xcuserdatad/xcschemes/xcschememanagement.plist
+bridge_proto.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
