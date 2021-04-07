@@ -36,7 +36,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row != 0 {
             return CGFloat(postTV.frame.height/3.5)
         } else {
-            return CGFloat(200) //guide post
+            return CGFloat(220) //guide post
         }
     }
     

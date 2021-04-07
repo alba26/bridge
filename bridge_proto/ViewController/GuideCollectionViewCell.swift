@@ -9,6 +9,8 @@ import UIKit
 
 class GuideCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var unameLabel: UILabel!
     @IBOutlet weak var guideView: UIView!
     @IBOutlet weak var guideImage: UIImageView!
     @IBOutlet weak var guideLabel: UILabel!

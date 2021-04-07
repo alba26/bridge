@@ -36,7 +36,10 @@ extension CollectionTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "guideCell", for: indexPath) as! GuideCollectionViewCell
         cell.guideImage.image = UIImage(named: "profileImage")
-        cell.guideLabel.text = "Testing"
+        cell.guideLabel.text = "Testing hallo hallo halloooo"
+        cell.profileImage.image = UIImage(named: "profileImage")
+        cell.profileImage.layer.cornerRadius = cell.profileImage.frame.width/2
+        cell.unameLabel.text = "pamungqas"
         cell.guideView.layer.cornerRadius = 4
         cell.guideView.clipsToBounds = true
 
