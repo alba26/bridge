@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +37,7 @@
             <objects>
                 <viewController id="Gnt-cL-8mD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lek-0s-0Sh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wg-dH-2lh">
@@ -71,7 +72,7 @@
             <objects>
                 <viewController id="hIG-76-Tnw" customClass="ProfileViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cA-wb-wJl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-bJ-eSD">
@@ -250,25 +251,47 @@
             </objects>
             <point key="canvasLocation" x="232" y="-1234"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Guide View Controller-->
         <scene sceneID="WV3-7K-VXQ">
             <objects>
-                <viewController id="zq2-nO-zfn" sceneMemberID="viewController">
+                <viewController id="zq2-nO-zfn" customClass="ProfileGuideViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4GG-Gp-D2L">
                         <rect key="frame" x="0.0" y="0.0" width="360" height="444"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrP-Jk-X37">
-                                <rect key="frame" x="131" y="189" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-1O-v8S">
+                                <rect key="frame" x="0.0" y="44" width="360" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VmL-NB-bZQ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="480-hE-tc6">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K6U-c1-cXu">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUU-hl-10D"/>
                         <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="SUU-hl-10D" firstAttribute="bottom" secondItem="CKw-1O-v8S" secondAttribute="bottom" id="9Mf-l4-S6o"/>
+                            <constraint firstItem="CKw-1O-v8S" firstAttribute="leading" secondItem="SUU-hl-10D" secondAttribute="leading" id="RLU-O9-Hd6"/>
+                            <constraint firstItem="CKw-1O-v8S" firstAttribute="top" secondItem="SUU-hl-10D" secondAttribute="top" id="nZa-fM-sJF"/>
+                            <constraint firstItem="SUU-hl-10D" firstAttribute="trailing" secondItem="CKw-1O-v8S" secondAttribute="trailing" id="pZh-sk-Mma"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="CKw-1O-v8S" id="yO4-WK-p3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4e-nD-ZTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +326,7 @@
             <objects>
                 <viewController id="6vB-Gf-aHI" customClass="FeedViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RsW-Wt-wXs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gke-ps-Xlp">
