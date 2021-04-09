@@ -60,7 +60,7 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
 //        table.register(FeedCollectionTableViewCell.nib(), forCellReuseIdentifier: FeedCollectionTableViewCell.identifier)
         table.register(CommentTableViewCell.nib(), forCellReuseIdentifier: CommentTableViewCell.identifier)
         
-        table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
+        table.register(ProfilePostTableViewCell.nib(), forCellReuseIdentifier: ProfilePostTableViewCell.identifier)
 
         table.delegate = self
         table.dataSource = self
@@ -229,7 +229,7 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
 //        }
         
         if indexPath.row < 1 {
-            let cell = table.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as! PostTableViewCell
+            let cell = table.dequeueReusableCell(withIdentifier: ProfilePostTableViewCell.identifier, for: indexPath) as! ProfilePostTableViewCell
             cell.configure()
             return cell
         }

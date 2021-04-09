@@ -7,16 +7,16 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+class ProfilePostTableViewCell: UITableViewCell {
 
-    static let identifier = "PostTableViewCell"
+    static let identifier = "ProfilePostTableViewCell"
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     @IBOutlet var imagevew:UIImageView!
     @IBOutlet var labelpost:UILabel!
     
     static func nib() -> UINib {
-        return UINib(nibName: "PostTableViewCell", bundle: nil )
+        return UINib(nibName: "ProfilePostTableViewCell", bundle: nil )
     }
     
     override func awakeFromNib() {
