@@ -32,12 +32,42 @@
             </objects>
             <point key="canvasLocation" x="-120.28985507246378" y="89.732142857142847"/>
         </scene>
+        <!--View Controller Post Detail-->
+        <scene sceneID="kkm-KU-RHQ">
+            <objects>
+                <viewController storyboardIdentifier="postDetail" id="y82-5N-Kld" customClass="ViewControllerPostDetail" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="INr-A0-98s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kkL-mn-2eu">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aGw-ZJ-Vi8"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="aGw-ZJ-Vi8" firstAttribute="bottom" secondItem="kkL-mn-2eu" secondAttribute="bottom" id="0sw-Ls-LgV"/>
+                            <constraint firstItem="kkL-mn-2eu" firstAttribute="top" secondItem="aGw-ZJ-Vi8" secondAttribute="top" id="FgV-9D-RXe"/>
+                            <constraint firstItem="aGw-ZJ-Vi8" firstAttribute="trailing" secondItem="kkL-mn-2eu" secondAttribute="trailing" id="Z5B-Yv-O1C"/>
+                            <constraint firstItem="kkL-mn-2eu" firstAttribute="leading" secondItem="aGw-ZJ-Vi8" secondAttribute="leading" id="Zui-NG-nH8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="kkL-mn-2eu" id="23j-Qi-bKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbi-Kq-JOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="817"/>
+        </scene>
         <!--Search-->
         <scene sceneID="f4n-vb-Erg">
             <objects>
                 <viewController id="Gnt-cL-8mD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lek-0s-0Sh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wg-dH-2lh">
@@ -72,7 +102,7 @@
             <objects>
                 <viewController id="hIG-76-Tnw" customClass="ProfileViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cA-wb-wJl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-bJ-eSD">
@@ -326,7 +356,7 @@
             <objects>
                 <viewController id="6vB-Gf-aHI" customClass="FeedViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RsW-Wt-wXs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gke-ps-Xlp">

@@ -12,7 +12,6 @@
 		3D42E6DB2620089100A322D9 /* ProfilePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */; };
 		3D42E6E12620091700A322D9 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */; };
 		3D42E6E22620091700A322D9 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */; };
-		3DA03C21262002F100674431 /* swiftgakselses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA03C20262002F100674431 /* swiftgakselses.swift */; };
 		3EA862FD261D9F1A00C43F66 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA862F7261D9F1A00C43F66 /* PostTableViewCell.xib */; };
 		3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA862F8261D9F1A00C43F66 /* GuideCollectionViewCell.xib */; };
 		3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA862FA261D9F1A00C43F66 /* FeedViewController.swift */; };
@@ -55,7 +54,6 @@
 		3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePostTableViewCell.xib; sourceTree = "<group>"; };
 		3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
-		3DA03C20262002F100674431 /* swiftgakselses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftgakselses.swift; sourceTree = "<group>"; };
 		3EA862F7261D9F1A00C43F66 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		3EA862F8261D9F1A00C43F66 /* GuideCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideCollectionViewCell.xib; sourceTree = "<group>"; };
 		3EA862FA261D9F1A00C43F66 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				9273ECBC261ABA270041D50D /* Assets.xcassets */,
 				9273ECBE261ABA270041D50D /* LaunchScreen.storyboard */,
 				9273ECC1261ABA270041D50D /* Info.plist */,
-				3DA03C20262002F100674431 /* swiftgakselses.swift */,
 			);
 			path = bridge_proto;
 			sourceTree = "<group>";
@@ -336,7 +333,6 @@
 				71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */,
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
 				3D42E6DA2620089100A322D9 /* ProfilePostTableViewCell.swift in Sources */,
-				3DA03C21262002F100674431 /* swiftgakselses.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
