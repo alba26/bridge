@@ -24,7 +24,7 @@ extension ProfileGuideViewController: UICollectionViewDelegateFlowLayout, UIColl
     
     //jumlah row
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
