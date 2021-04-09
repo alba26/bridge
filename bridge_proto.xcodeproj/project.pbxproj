@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D015F0A261ED6D900F00DE9 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D015F08261ED6D900F00DE9 /* CommentTableViewCell.swift */; };
+		3D015F0B261ED6D900F00DE9 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D015F09261ED6D900F00DE9 /* CommentTableViewCell.xib */; };
+		3D015F14261ED70600F00DE9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D015F12261ED70600F00DE9 /* PostTableViewCell.swift */; };
+		3D015F15261ED70600F00DE9 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D015F13261ED70600F00DE9 /* PostTableViewCell.xib */; };
+		3D015F1A261ED86C00F00DE9 /* ViewControllerPostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D015F19261ED86C00F00DE9 /* ViewControllerPostDetail.swift */; };
 		92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92117A27261C1F43002AE4AC /* ProfileViewController.swift */; };
 		9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECB3261ABA260041D50D /* AppDelegate.swift */; };
 		9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECB5261ABA260041D50D /* SceneDelegate.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D015F08261ED6D900F00DE9 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3D015F09261ED6D900F00DE9 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		3D015F12261ED70600F00DE9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		3D015F13261ED70600F00DE9 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		3D015F19261ED86C00F00DE9 /* ViewControllerPostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPostDetail.swift; sourceTree = "<group>"; };
 		92117A27261C1F43002AE4AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9273ECB0261ABA260041D50D /* bridge_proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bridge_proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9273ECB3261ABA260041D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D015F07261ED6A900F00DE9 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3D015F08261ED6D900F00DE9 /* CommentTableViewCell.swift */,
+				3D015F09261ED6D900F00DE9 /* CommentTableViewCell.xib */,
+				3D015F12261ED70600F00DE9 /* PostTableViewCell.swift */,
+				3D015F13261ED70600F00DE9 /* PostTableViewCell.xib */,
+				3D015F19261ED86C00F00DE9 /* ViewControllerPostDetail.swift */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
 		92117A26261C1F19002AE4AC /* profile_page */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +131,7 @@
 		9273ECB2261ABA260041D50D /* bridge_proto */ = {
 			isa = PBXGroup;
 			children = (
+				3D015F07261ED6A900F00DE9 /* Post Detail */,
 				92117A26261C1F19002AE4AC /* profile_page */,
 				9273ECB3261ABA260041D50D /* AppDelegate.swift */,
 				9273ECB5261ABA260041D50D /* SceneDelegate.swift */,
@@ -243,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */,
+				3D015F15261ED70600F00DE9 /* PostTableViewCell.xib in Resources */,
 				9273ECBD261ABA270041D50D /* Assets.xcassets in Resources */,
 				9273ECBB261ABA260041D50D /* Main.storyboard in Resources */,
+				3D015F0B261ED6D900F00DE9 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +296,11 @@
 			files = (
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
+				3D015F0A261ED6D900F00DE9 /* CommentTableViewCell.swift in Sources */,
+				3D015F1A261ED86C00F00DE9 /* ViewControllerPostDetail.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
 				9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */,
+				3D015F14261ED70600F00DE9 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6W5NPNJGK4;
+				DEVELOPMENT_TEAM = 74S9996J9W;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6W5NPNJGK4;
+				DEVELOPMENT_TEAM = 74S9996J9W;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
