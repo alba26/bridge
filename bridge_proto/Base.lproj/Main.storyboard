@@ -67,7 +67,7 @@
             <objects>
                 <viewController id="Gnt-cL-8mD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lek-0s-0Sh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wg-dH-2lh">
@@ -102,7 +102,7 @@
             <objects>
                 <viewController id="hIG-76-Tnw" customClass="ProfileViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cA-wb-wJl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-bJ-eSD">
@@ -257,29 +257,45 @@
             </objects>
             <point key="canvasLocation" x="789.23076923076917" y="-688.15165876777246"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Post View Controller-->
         <scene sceneID="Y9E-9n-jIC">
             <objects>
-                <viewController id="RtJ-M1-dJt" sceneMemberID="viewController">
+                <viewController id="RtJ-M1-dJt" customClass="ProfilePostViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vDh-r8-KRn">
                         <rect key="frame" x="0.0" y="0.0" width="360" height="444"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Postt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQh-sS-5rO">
-                                <rect key="frame" x="175" y="193" width="40" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-qj-bjU">
+                                <rect key="frame" x="0.0" y="0.0" width="360" height="444"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ADg-Ru-P9I" customClass="PostTableViewCell" customModule="bridge_proto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="360" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADg-Ru-P9I" id="RlI-4j-M8Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Si-fO-EYd"/>
                         <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="B1p-qj-bjU" firstAttribute="top" secondItem="vDh-r8-KRn" secondAttribute="top" id="8Ao-yt-CsE"/>
+                            <constraint firstItem="B1p-qj-bjU" firstAttribute="bottom" secondItem="2Si-fO-EYd" secondAttribute="bottom" id="8TH-hi-Sen"/>
+                            <constraint firstItem="B1p-qj-bjU" firstAttribute="trailing" secondItem="2Si-fO-EYd" secondAttribute="trailing" id="Mih-Dw-9iQ"/>
+                            <constraint firstItem="B1p-qj-bjU" firstAttribute="leading" secondItem="2Si-fO-EYd" secondAttribute="leading" id="aQx-Hw-Sep"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="postTableView" destination="B1p-qj-bjU" id="z10-fV-ysv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ik3-hh-LB6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-1234"/>
+            <point key="canvasLocation" x="230.76923076923077" y="-1234.1232227488151"/>
         </scene>
         <!--Profile Guide View Controller-->
         <scene sceneID="WV3-7K-VXQ">
@@ -356,7 +372,7 @@
             <objects>
                 <viewController id="6vB-Gf-aHI" customClass="FeedViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RsW-Wt-wXs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gke-ps-Xlp">

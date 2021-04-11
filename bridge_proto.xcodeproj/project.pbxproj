@@ -29,6 +29,7 @@
 		9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9273ECBE261ABA270041D50D /* LaunchScreen.storyboard */; };
 		9273ECCB261ABA270041D50D /* bridge_protoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECCA261ABA270041D50D /* bridge_protoTests.swift */; };
 		9273ECD6261ABA270041D50D /* bridge_protoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */; };
+		B3BA689426236D8E005042F9 /* ProfilePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		9273ECD1261ABA270041D50D /* bridge_protoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridge_protoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridge_protoUITests.swift; sourceTree = "<group>"; };
 		9273ECD7261ABA270041D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				92117A27261C1F43002AE4AC /* ProfileViewController.swift */,
 				71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */,
+				B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */,
 			);
 			path = profile_page;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
+				B3BA689426236D8E005042F9 /* ProfilePostViewController.swift in Sources */,
 				3D42E6E12620091700A322D9 /* CommentTableViewCell.swift in Sources */,
 				3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */,
 				9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */,
