@@ -117,10 +117,10 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
             
         }
         else if notification.name.rawValue == "UIKeyboardWillShowNotification"{
-            bottomContraint?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintChat?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintPic?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintButton?.constant = -CGFloat(tinggikibords)-25
+            bottomContraint?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintChat?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintPic?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintButton?.constant = -CGFloat(tinggikibords)+50
 
         }
     }
