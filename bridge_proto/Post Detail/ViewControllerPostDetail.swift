@@ -60,7 +60,8 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
 //        table.register(FeedCollectionTableViewCell.nib(), forCellReuseIdentifier: FeedCollectionTableViewCell.identifier)
         table.register(CommentTableViewCell.nib(), forCellReuseIdentifier: CommentTableViewCell.identifier)
         
-        table.register(ProfilePostTableViewCell.nib(), forCellReuseIdentifier: ProfilePostTableViewCell.identifier)
+//        table.register(PostTableViewCell, forCellReuseIdentifier: PostTableViewCell.identifier)
+        table.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "postCell")
 
         table.delegate = self
         table.dataSource = self
@@ -117,10 +118,10 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
             
         }
         else if notification.name.rawValue == "UIKeyboardWillShowNotification"{
-            bottomContraint?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintChat?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintPic?.constant = -CGFloat(tinggikibords)-25
-            bottomContraintButton?.constant = -CGFloat(tinggikibords)-25
+            bottomContraint?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintChat?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintPic?.constant = -CGFloat(tinggikibords)+50
+            bottomContraintButton?.constant = -CGFloat(tinggikibords)+50
 
         }
     }
@@ -229,9 +230,22 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
 //        }
         
         if indexPath.row < 1 {
-            let cell = table.dequeueReusableCell(withIdentifier: ProfilePostTableViewCell.identifier, for: indexPath) as! ProfilePostTableViewCell
-            cell.configure()
+//            let cell = table.dequeueReusableCell(withIdentifier: ProfilePostTableViewCell.identifier, for: indexPath) as! ProfilePostTableViewCell
+//            cell.configure()
+//            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
+            
+            cell.nameLabel.text = "Felin"
+            cell.jobLabel.text = "Singer"
+            cell.postTimeLabel.text = "4 hours ago"
+            cell.postLabel.text = "Hallo test!"
+            
+            cell.postImage.image = UIImage(named: "profileImage")
+            cell.postImage.layer.cornerRadius = cell.postImage.frame.height/2
+            cell.selectionStyle = .none
+            
             return cell
+            
         }
         
         let cell = table.dequeueReusableCell(withIdentifier: CommentTableViewCell.identifier, for: indexPath) as! CommentTableViewCell

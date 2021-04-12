@@ -17,19 +17,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nt-hj-32l">
-                        <rect key="frame" x="15" y="0.0" width="384" height="20.5"/>
+                        <rect key="frame" x="15" y="10" width="384" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rHk-7X-5nj">
-                        <rect key="frame" x="13" y="52.5" width="388" height="75"/>
+                        <rect key="frame" x="13" y="62.5" width="388" height="65"/>
                         <connections>
                             <action selector="songSliderAnimation:" destination="ULq-io-xXM" eventType="valueChanged" id="lwr-jg-08j"/>
                         </connections>
                     </slider>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-AN-hZW">
-                        <rect key="frame" x="100" y="25.5" width="214" height="22"/>
+                        <rect key="frame" x="100" y="35.5" width="214" height="22"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ8-nq-gbk">
                                 <rect key="frame" x="0.0" y="0.0" width="84" height="22"/>
@@ -54,6 +54,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" name="Color"/>
                 <color key="tintColor" name="AccentColor"/>
                 <constraints>
                     <constraint firstItem="ZYp-JJ-1Z7" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leadingMargin" constant="20" id="7FP-d4-N7q"/>
@@ -62,7 +63,7 @@
                     <constraint firstAttribute="trailing" secondItem="LDP-AN-hZW" secondAttribute="trailing" constant="100" id="Leo-k3-AZG"/>
                     <constraint firstAttribute="trailing" secondItem="5nt-hj-32l" secondAttribute="trailing" constant="15" id="SgG-XL-uZA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ZYp-JJ-1Z7" secondAttribute="trailing" constant="20" id="Ugk-in-zWP"/>
-                    <constraint firstItem="5nt-hj-32l" firstAttribute="top" secondItem="dfm-pR-fU1" secondAttribute="top" id="c2I-To-jpv"/>
+                    <constraint firstItem="5nt-hj-32l" firstAttribute="top" secondItem="dfm-pR-fU1" secondAttribute="top" constant="10" id="c2I-To-jpv"/>
                     <constraint firstItem="5nt-hj-32l" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leading" constant="15" id="c5n-Fx-oBp"/>
                     <constraint firstItem="rHk-7X-5nj" firstAttribute="top" secondItem="LDP-AN-hZW" secondAttribute="bottom" constant="5" id="ct4-RD-pg1"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ZYp-JJ-1Z7" secondAttribute="bottom" id="esm-4L-luM"/>
@@ -86,6 +87,9 @@
         <image name="stop" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.96100002527236938" green="0.40000000596046448" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

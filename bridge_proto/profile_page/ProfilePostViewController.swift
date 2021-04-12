@@ -47,7 +47,7 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView,  heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(postTableView.frame.height/2.5)
+        return CGFloat(postTableView.frame.height/2)
     }
     
 }

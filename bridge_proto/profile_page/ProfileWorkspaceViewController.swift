@@ -25,7 +25,7 @@ class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UIT
         songWidgetCollection.delegate = self
         songWidgetCollection.dataSource = self
         songWidgetCollection.register(UINib(nibName: "SongWidget", bundle: nil), forCellReuseIdentifier: "songWidgetCell")
-        self.songWidgetCollection.backgroundColor = UIColor.clear
+//        self.songWidgetCollection.backgroundColor = UIColor.clear
         //load mp3
         
 //        let sound = Bundle.main.path(forResource: "tothebone", ofType: "mp3")
@@ -44,7 +44,7 @@ class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UIT
     //tableview
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
