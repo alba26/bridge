@@ -30,7 +30,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8T-Ai-UgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120.28985507246378" y="89.732142857142847"/>
+            <point key="canvasLocation" x="-143" y="90"/>
         </scene>
         <!--View Controller Post Detail-->
         <scene sceneID="kkm-KU-RHQ">
@@ -343,29 +343,45 @@
             </objects>
             <point key="canvasLocation" x="870.76923076923072" y="-1234.4786729857819"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Workspace View Controller-->
         <scene sceneID="J2u-f1-vFS">
             <objects>
-                <viewController id="lbV-H8-7Dm" sceneMemberID="viewController">
+                <viewController id="lbV-H8-7Dm" customClass="ProfileWorkspaceViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Pj-2V-nos">
                         <rect key="frame" x="0.0" y="0.0" width="360" height="444"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXq-pa-eRY">
-                                <rect key="frame" x="159" y="106" width="40" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rnk-Ui-fq1">
+                                <rect key="frame" x="0.0" y="70" width="360" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-UL-OnO">
+                                <rect key="frame" x="0.0" y="20" width="360" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Add Workspace">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wWg-8q-ZHb"/>
                         <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="top" secondItem="vtf-UL-OnO" secondAttribute="bottom" constant="20" id="C5P-9f-KcJ"/>
+                            <constraint firstItem="wWg-8q-ZHb" firstAttribute="trailing" secondItem="vtf-UL-OnO" secondAttribute="trailing" id="GaT-qX-anV"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="bottom" secondItem="wWg-8q-ZHb" secondAttribute="bottom" id="Kn2-Md-dM3"/>
+                            <constraint firstItem="vtf-UL-OnO" firstAttribute="top" secondItem="7Pj-2V-nos" secondAttribute="top" constant="20" id="Qhz-HQ-0Zl"/>
+                            <constraint firstItem="vtf-UL-OnO" firstAttribute="leading" secondItem="wWg-8q-ZHb" secondAttribute="leading" id="g4w-fX-grT"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="trailing" secondItem="wWg-8q-ZHb" secondAttribute="trailing" id="moB-XR-peP"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="leading" secondItem="wWg-8q-ZHb" secondAttribute="leading" id="nef-2p-LNx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="songWidgetCollection" destination="rnk-Ui-fq1" id="VJo-YK-mkQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGM-WN-vBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="-1234"/>
+            <point key="canvasLocation" x="1470.7692307692307" y="-1234.1232227488151"/>
         </scene>
         <!--Bridge-->
         <scene sceneID="YmT-CB-evo">
