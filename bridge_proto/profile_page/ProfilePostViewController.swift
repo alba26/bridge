@@ -26,7 +26,15 @@ class ProfilePostViewController: UIViewController{
 }
 
 extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = stryboard.instantiateViewController(withIdentifier: "postDetail")
+//        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        print("TESTTTTTT")
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -49,5 +57,6 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView,  heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(postTableView.frame.height/2)
     }
+    
     
 }

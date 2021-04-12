@@ -17,7 +17,6 @@ class SongWidget: UITableViewCell {
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var songLength: UILabel!
     
-    var flag = 1
     
     var audioPlayer = AVAudioPlayer()
     
@@ -35,25 +34,34 @@ class SongWidget: UITableViewCell {
         }
         songSlider.maximumValue = Float(audioPlayer.duration)
         songSlider.setValue(0, animated: true)
+        stopButton.isEnabled = false
     }
         
         
     
     @IBAction func playSong(_ sender: Any) {
-        if flag == 1{
-            flag = 2
+        
+        if  audioPlayer.isPlaying == false {
             audioPlayer.play()
             songLength.isHidden = false
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
-        }else{
-            playPauseButton.setImage(UIImage(systemName: "pause" ), for: .normal)
+            playPauseButton.setImage(UIImage(systemName: "pause.fill" ), for: .normal)
+            stopButton.isEnabled = true
+        }else if audioPlayer.isPlaying == true{
+            audioPlayer.pause()
+            playPauseButton.setImage(UIImage(systemName: "play.fill" ), for: .normal)
         }
         
     }
     
     @IBAction func stopSong(_ sender: Any) {
-        audioPlayer.stop()
-        audioPlayer.currentTime = 0
+        if audioPlayer.isPlaying == true{
+            audioPlayer.stop()
+            audioPlayer.currentTime = 0
+            playPauseButton.setImage(UIImage(systemName: "play.fill" ), for: .normal)
+            stopButton.isEnabled = false
+        }
+        
     }
     
     @IBAction func songSliderAnimation(_ sender: Any) {
