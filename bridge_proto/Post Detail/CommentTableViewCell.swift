@@ -40,7 +40,7 @@ class CommentTableViewCell: UITableViewCell {
 //        self.labelpost.textColor = UIColor.init(named: "Color")
         self.labelpost.adjustsFontSizeToFitWidth = true
         self.labelpost.text = "Lorem Ipsum This Comment "
-        self.imagevew.contentMode = .scaleToFill
+        self.imagevew.contentMode = .scaleAspectFill
         
     }
 //    private let myLabel: UILabel = {

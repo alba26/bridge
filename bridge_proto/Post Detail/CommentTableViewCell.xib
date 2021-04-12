@@ -38,7 +38,7 @@
                 <color key="backgroundColor" name="Color"/>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="CcR-qs-Mq4"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" name="Color"/>
             <connections>
                 <outlet property="imagevew" destination="uii-6m-AKg" id="HHS-dN-qqr"/>
                 <outlet property="labelpost" destination="56a-0H-3oe" id="D8M-jf-mAj"/>
