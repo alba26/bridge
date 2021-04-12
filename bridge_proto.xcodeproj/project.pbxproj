@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D42E6D12620085100A322D9 /* ViewControllerPostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42E6D02620085100A322D9 /* ViewControllerPostDetail.swift */; };
+		3D42E6DA2620089100A322D9 /* ProfilePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42E6D82620089100A322D9 /* ProfilePostTableViewCell.swift */; };
+		3D42E6DB2620089100A322D9 /* ProfilePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */; };
+		3D42E6E12620091700A322D9 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */; };
+		3D42E6E22620091700A322D9 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */; };
 		3EA862FD261D9F1A00C43F66 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA862F7261D9F1A00C43F66 /* PostTableViewCell.xib */; };
 		3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA862F8261D9F1A00C43F66 /* GuideCollectionViewCell.xib */; };
 		3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA862FA261D9F1A00C43F66 /* FeedViewController.swift */; };
@@ -29,6 +34,7 @@
 		9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9273ECBE261ABA270041D50D /* LaunchScreen.storyboard */; };
 		9273ECCB261ABA270041D50D /* bridge_protoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECCA261ABA270041D50D /* bridge_protoTests.swift */; };
 		9273ECD6261ABA270041D50D /* bridge_protoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */; };
+		B3BA689426236D8E005042F9 /* ProfilePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D42E6D02620085100A322D9 /* ViewControllerPostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPostDetail.swift; sourceTree = "<group>"; };
+		3D42E6D82620089100A322D9 /* ProfilePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostTableViewCell.swift; sourceTree = "<group>"; };
+		3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePostTableViewCell.xib; sourceTree = "<group>"; };
+		3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		3EA862F7261D9F1A00C43F66 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		3EA862F8261D9F1A00C43F66 /* GuideCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideCollectionViewCell.xib; sourceTree = "<group>"; };
 		3EA862FA261D9F1A00C43F66 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +88,7 @@
 		9273ECD1261ABA270041D50D /* bridge_protoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridge_protoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridge_protoUITests.swift; sourceTree = "<group>"; };
 		9273ECD7261ABA270041D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D42E6CF262007A900A322D9 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3D42E6D02620085100A322D9 /* ViewControllerPostDetail.swift */,
+				3D42E6D82620089100A322D9 /* ProfilePostTableViewCell.swift */,
+				3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */,
+				3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */,
+				3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
 		3EA862F3261D9EBF00C43F66 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +337,9 @@
 				3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */,
 				9273ECBD261ABA270041D50D /* Assets.xcassets in Resources */,
 				9273ECBB261ABA260041D50D /* Main.storyboard in Resources */,
+				3D42E6DB2620089100A322D9 /* ProfilePostTableViewCell.xib in Resources */,
 				3EA862FD261D9F1A00C43F66 /* PostTableViewCell.xib in Resources */,
+				3D42E6E22620091700A322D9 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,13 +364,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D42E6D12620085100A322D9 /* ViewControllerPostDetail.swift in Sources */,
 				71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */,
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
+				3D42E6DA2620089100A322D9 /* ProfilePostTableViewCell.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
 				922A70A9262210670073612D /* SongWidget.swift in Sources */,
 				9271220A261FCAF700C05819 /* ProfileWorkspaceViewController.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
+				B3BA689426236D8E005042F9 /* ProfilePostViewController.swift in Sources */,
+				3D42E6E12620091700A322D9 /* CommentTableViewCell.swift in Sources */,
 				3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */,
 				9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */,
 				3EA86301261D9F1A00C43F66 /* GuideCollectionViewCell.swift in Sources */,
@@ -525,7 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G7629G4PP;
+				DEVELOPMENT_TEAM = 74S9996J9W;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,7 +574,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G7629G4PP;
+				DEVELOPMENT_TEAM = 74S9996J9W;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

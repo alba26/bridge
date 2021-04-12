@@ -66,4 +66,11 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = stryboard.instantiateViewController(withIdentifier: "postDetail")
+//        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
