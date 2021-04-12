@@ -16,6 +16,8 @@
 		3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */; };
 		71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */; };
 		92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92117A27261C1F43002AE4AC /* ProfileViewController.swift */; };
+		922A70A9262210670073612D /* SongWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A70A8262210670073612D /* SongWidget.swift */; };
+		9260287826217F1100CE4956 /* SongWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9260287726217F1100CE4956 /* SongWidget.xib */; };
 		9271220A261FCAF700C05819 /* ProfileWorkspaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */; };
 		92712211261FCC4E00C05819 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9271220F261FCC4100C05819 /* AVFoundation.framework */; };
 		92712218261FCE8C00C05819 /* tothebone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92712217261FCE8C00C05819 /* tothebone.mp3 */; };
@@ -56,6 +58,8 @@
 		3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGuideViewController.swift; sourceTree = "<group>"; };
 		92117A27261C1F43002AE4AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		922A70A8262210670073612D /* SongWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongWidget.swift; sourceTree = "<group>"; };
+		9260287726217F1100CE4956 /* SongWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongWidget.xib; sourceTree = "<group>"; };
 		92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorkspaceViewController.swift; sourceTree = "<group>"; };
 		9271220F261FCC4100C05819 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		92712217261FCE8C00C05819 /* tothebone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tothebone.mp3; path = ../../../../../../../Downloads/tothebone.mp3; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				92117A27261C1F43002AE4AC /* ProfileViewController.swift */,
 				71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */,
 				92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */,
+				9260287726217F1100CE4956 /* SongWidget.xib */,
+				922A70A8262210670073612D /* SongWidget.swift */,
 			);
 			path = profile_page;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			files = (
 				9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */,
 				3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */,
+				9260287826217F1100CE4956 /* SongWidget.xib in Resources */,
 				92712218261FCE8C00C05819 /* tothebone.mp3 in Resources */,
 				3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */,
 				9273ECBD261ABA270041D50D /* Assets.xcassets in Resources */,
@@ -335,6 +342,7 @@
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
+				922A70A9262210670073612D /* SongWidget.swift in Sources */,
 				9271220A261FCAF700C05819 /* ProfileWorkspaceViewController.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
 				3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */,

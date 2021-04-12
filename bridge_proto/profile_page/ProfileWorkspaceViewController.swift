@@ -6,64 +6,102 @@
 //
 
 import UIKit
-import AVFoundation
+//import AVFoundation
 
-class ProfileWorkspaceViewController: UIViewController {
+class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+   
+    @IBOutlet weak var songWidgetCollection: UITableView!
+//
+//    @IBOutlet weak var songSlider: UISlider!
+//    @IBOutlet weak var soundLength: UILabel!
+//    @IBOutlet weak var soundName: UILabel!
+//    var audioPlayer = AVAudioPlayer()
     
-    var audioPlayer = AVAudioPlayer()
     
-    
-    @IBOutlet weak var songSlider: UISlider!
-    @IBOutlet weak var soundLength: UILabel!
-    @IBOutlet weak var soundName: UILabel!
-
-    func updateTime(){
-       
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        songWidgetCollection.delegate = self
+        songWidgetCollection.dataSource = self
+        songWidgetCollection.register(UINib(nibName: "SongWidget", bundle: nil), forCellReuseIdentifier: "songWidgetCell")
+        self.songWidgetCollection.backgroundColor = UIColor.clear
+        //load mp3
         
-        let sound = Bundle.main.path(forResource: "tothebone", ofType: "mp3")
-        
-        do{
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-        }
-        catch{
-            print(error)
-        }
-        songSlider.maximumValue = Float(audioPlayer.duration)
-//        songSlider.setValue(50, animated: true)
+//        let sound = Bundle.main.path(forResource: "tothebone", ofType: "mp3")
+//
+//        do{
+//            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+//        }
+//        catch{
+//            print(error)
+//        }
+//        songSlider.maximumValue = Float(audioPlayer.duration)
+//        songSlider.setValue(0, animated: true)
     }
-    @IBAction func playSound(_ sender: Any) {
-        audioPlayer.play()
-        Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(fire), userInfo: nil, repeats: true)
-    }
-    @IBAction func stopSound(_ sender: Any) {
-        audioPlayer.stop()
-        audioPlayer.currentTime = 0
-    }
-    @IBAction func pauseSound(_ sender: Any) {
-        audioPlayer.pause()
+
+    
+    //tableview
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
     
-    @IBAction func songSlider(_ sender: Any) {
-        var minutes = songSlider.value/60
-        var seconds = minutes / 60
-        soundLength.text = NSString(format: "0%d:%f", Int(minutes), seconds) as String
-        audioPlayer.stop()
-        audioPlayer.currentTime = TimeInterval(songSlider.value)
-        audioPlayer.prepareToPlay()
-        audioPlayer.play()
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "songWidgetCell") as! SongWidget
+        cell.songName.text = "To the bone"
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+            return CGFloat(150) //guide post
         
     }
-    @objc func fire(){
-        songSlider.setValue(Float(audioPlayer.currentTime), animated: true)
-    }
-        func updateSlider(){
-        
-        songSlider.value = Float(audioPlayer.currentTime)
-        
-    }
+
+   
+    //action
+//
+//    @IBAction func playSound(_ sender: Any) {
+//        audioPlayer.play()
+//        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
+//    }
+//
+//
+//    @IBAction func stopSound(_ sender: Any) {
+//        audioPlayer.stop()
+//        audioPlayer.currentTime = 0
+//    }
+//
+//
+//    @IBAction func pauseSound(_ sender: Any) {
+//        audioPlayer.pause()
+//    }
+//
+//
+//    @IBAction func songSliderMove(_ sender: UISlider) {
+//        var minutes = songSlider.value/60
+//        var seconds = Int(songSlider.value)%60
+//        soundLength.text = NSString(format: "%02d:%02d", Int(minutes), seconds) as String
+//        audioPlayer.stop()
+//        audioPlayer.currentTime = TimeInterval(songSlider.value)
+//        audioPlayer.prepareToPlay()
+//        audioPlayer.play()
+//    }
+//
+//    @objc func updateSlider(){
+//        songSlider.setValue(Float(audioPlayer.currentTime), animated: true)
+//
+//        var minutes = songSlider.value/60
+//        var seconds = Int(songSlider.value)%60
+//        soundLength.text = NSString(format: "%02d:%02d", Int(minutes),seconds) as String
+//    }
+//
+    
+    
 }
+
+
+    
+

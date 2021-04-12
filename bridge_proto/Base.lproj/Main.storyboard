@@ -37,7 +37,7 @@
             <objects>
                 <viewController id="Gnt-cL-8mD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lek-0s-0Sh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wg-dH-2lh">
@@ -72,7 +72,7 @@
             <objects>
                 <viewController id="hIG-76-Tnw" customClass="ProfileViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cA-wb-wJl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-bJ-eSD">
@@ -305,59 +305,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="360" height="444"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-D2-JUs">
-                                <rect key="frame" x="169" y="223" width="15" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="play" catalog="system"/>
-                                <connections>
-                                    <action selector="playSound:" destination="lbV-H8-7Dm" eventType="touchUpInside" id="bwb-so-QiV"/>
-                                </connections>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rnk-Ui-fq1">
+                                <rect key="frame" x="0.0" y="70" width="360" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-UL-OnO">
+                                <rect key="frame" x="0.0" y="20" width="360" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Add Workspace">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-h2-hUv">
-                                <rect key="frame" x="229" y="223" width="18" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="stop" catalog="system"/>
-                                <connections>
-                                    <action selector="stopSound:" destination="lbV-H8-7Dm" eventType="touchUpInside" id="jFZ-8y-Iwz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-9g-hzc">
-                                <rect key="frame" x="275" y="223" width="11" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="pause" catalog="system"/>
-                                <connections>
-                                    <action selector="pauseSound:" destination="lbV-H8-7Dm" eventType="touchUpInside" id="LB9-w0-fcE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-rP-oIn">
-                                <rect key="frame" x="217" y="184" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OcJ-wy-WCk">
-                                <rect key="frame" x="36" y="273" width="271" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="songSlider:" destination="lbV-H8-7Dm" eventType="valueChanged" id="MU0-aW-Rxl"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG2-hH-ih3">
-                                <rect key="frame" x="207" y="319" width="109" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wWg-8q-ZHb"/>
                         <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="top" secondItem="vtf-UL-OnO" secondAttribute="bottom" constant="20" id="C5P-9f-KcJ"/>
+                            <constraint firstItem="wWg-8q-ZHb" firstAttribute="trailing" secondItem="vtf-UL-OnO" secondAttribute="trailing" id="GaT-qX-anV"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="bottom" secondItem="wWg-8q-ZHb" secondAttribute="bottom" id="Kn2-Md-dM3"/>
+                            <constraint firstItem="vtf-UL-OnO" firstAttribute="top" secondItem="7Pj-2V-nos" secondAttribute="top" constant="20" id="Qhz-HQ-0Zl"/>
+                            <constraint firstItem="vtf-UL-OnO" firstAttribute="leading" secondItem="wWg-8q-ZHb" secondAttribute="leading" id="g4w-fX-grT"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="trailing" secondItem="wWg-8q-ZHb" secondAttribute="trailing" id="moB-XR-peP"/>
+                            <constraint firstItem="rnk-Ui-fq1" firstAttribute="leading" secondItem="wWg-8q-ZHb" secondAttribute="leading" id="nef-2p-LNx"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="songSlider" destination="OcJ-wy-WCk" id="gLk-50-KaF"/>
-                        <outlet property="soundLength" destination="aG2-hH-ih3" id="y0s-w7-3S0"/>
-                        <outlet property="soundName" destination="9Hn-rP-oIn" id="eKM-dN-y8N"/>
+                        <outlet property="songWidgetCollection" destination="rnk-Ui-fq1" id="VJo-YK-mkQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGM-WN-vBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -369,7 +342,7 @@
             <objects>
                 <viewController id="6vB-Gf-aHI" customClass="FeedViewController" customModule="bridge_proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RsW-Wt-wXs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gke-ps-Xlp">
@@ -427,14 +400,11 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="music.mic" catalog="system" width="128" height="121"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
-        <image name="pause" catalog="system" width="88" height="128"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="play" catalog="system" width="120" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profileImage" width="635" height="485"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
-        <image name="stop" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.96100002527236938" green="0.40000000596046448" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
