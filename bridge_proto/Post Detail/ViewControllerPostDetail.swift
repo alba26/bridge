@@ -43,6 +43,8 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        newProfileComment.contentMode = .scaleAspectFill
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillShow),
@@ -113,16 +115,16 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
             bottomContraintChat?.constant = -50
             bottomContraintPic?.constant = -50
             bottomContraintButton?.constant = -50
-
+            bottomBlockContraint?.constant = -50
 
             
         }
         else if notification.name.rawValue == "UIKeyboardWillShowNotification"{
-            bottomContraint?.constant = -CGFloat(tinggikibords)+50
-            bottomContraintChat?.constant = -CGFloat(tinggikibords)+50
-            bottomContraintPic?.constant = -CGFloat(tinggikibords)+50
-            bottomContraintButton?.constant = -CGFloat(tinggikibords)+50
-
+            bottomContraint?.constant = -CGFloat(tinggikibords)-25
+            bottomContraintChat?.constant = -CGFloat(tinggikibords)-25
+            bottomContraintPic?.constant = -CGFloat(tinggikibords)-25
+            bottomContraintButton?.constant = -CGFloat(tinggikibords)-25
+            bottomBlockContraint?.constant = -CGFloat(tinggikibords)-25
         }
     }
     
@@ -238,7 +240,7 @@ class ViewControllerPostDetail: UIViewController, UITableViewDelegate, UITableVi
             cell.nameLabel.text = "Felin"
             cell.jobLabel.text = "Singer"
             cell.postTimeLabel.text = "4 hours ago"
-            cell.postLabel.text = "Hallo test!"
+            cell.postLabel.text = "In an unbalanced world where openness is jewelry; i'll be in the corner finding rhymes with a head thats cracked but full of dreams & colours."
             
             cell.postImage.image = UIImage(named: "profileImage")
             cell.postImage.layer.cornerRadius = cell.postImage.frame.height/2

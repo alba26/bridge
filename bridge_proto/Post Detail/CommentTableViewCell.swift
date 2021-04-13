@@ -39,7 +39,7 @@ class CommentTableViewCell: UITableViewCell {
         self.imagevew.layer.cornerRadius = imagevew.frame.size.width/2
 //        self.labelpost.textColor = UIColor.init(named: "Color")
         self.labelpost.adjustsFontSizeToFitWidth = true
-        self.labelpost.text = "Lorem Ipsum This Comment "
+        self.labelpost.text = "Very Inspiring!"
         self.imagevew.contentMode = .scaleAspectFill
         
     }
