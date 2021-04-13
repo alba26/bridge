@@ -12,7 +12,8 @@ class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UIT
    
     @IBOutlet weak var songWidgetCollection: UITableView!
 //
-//    @IBOutlet weak var songSlider: UISlider!
+    @IBOutlet weak var createWorkspace: UIButton!
+    //    @IBOutlet weak var songSlider: UISlider!
 //    @IBOutlet weak var soundLength: UILabel!
 //    @IBOutlet weak var soundName: UILabel!
 //    var audioPlayer = AVAudioPlayer()
@@ -25,6 +26,8 @@ class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UIT
         songWidgetCollection.delegate = self
         songWidgetCollection.dataSource = self
         songWidgetCollection.register(UINib(nibName: "SongWidget", bundle: nil), forCellReuseIdentifier: "songWidgetCell")
+        
+        createWorkspace.layer.cornerRadius=8
 //        self.songWidgetCollection.backgroundColor = UIColor.clear
         //load mp3
         

@@ -63,15 +63,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lmN-Fq-EMi">
-                                <rect key="frame" x="12" y="197.5" width="54" height="23.5"/>
+                                <rect key="frame" x="12" y="132.5" width="54" height="88.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4B-gE-y0B">
-                                        <rect key="frame" x="0.0" y="0.0" width="22" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="22" height="88.5"/>
                                         <color key="tintColor" red="0.93333333330000001" green="0.52549019610000003" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="heart" catalog="system"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-g2-aCy">
-                                        <rect key="frame" x="32" y="0.0" width="22" height="23.5"/>
+                                        <rect key="frame" x="32" y="0.0" width="22" height="88.5"/>
                                         <color key="tintColor" red="0.93333333330000001" green="0.52549019610000003" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="message" catalog="system"/>
                                     </button>
@@ -93,7 +93,7 @@
                             <constraint firstItem="DPs-fU-wv8" firstAttribute="leading" secondItem="ufM-6I-r5t" secondAttribute="trailing" constant="18" id="mJh-EX-pOd"/>
                             <constraint firstItem="ufM-6I-r5t" firstAttribute="top" secondItem="wbm-53-FfD" secondAttribute="top" constant="12" id="nuu-7r-fdJ"/>
                             <constraint firstItem="WE4-o9-eI9" firstAttribute="leading" secondItem="wbm-53-FfD" secondAttribute="leading" constant="12" id="rYw-37-QJM"/>
-                            <constraint firstItem="lmN-Fq-EMi" firstAttribute="top" relation="lessThanOrEqual" secondItem="WE4-o9-eI9" secondAttribute="bottom" constant="85" id="tfX-ux-Jjh"/>
+                            <constraint firstItem="lmN-Fq-EMi" firstAttribute="top" secondItem="WE4-o9-eI9" secondAttribute="bottom" constant="20" id="tfX-ux-Jjh"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -39,14 +39,16 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
         return 5
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
         cell.nameLabel.text = "Pamungkas"
         cell.jobLabel.text = "@pamungqas"
         cell.postTimeLabel.text = "4 hours ago"
-        cell.postLabel.text = "sila dengerkeun to the bone versi taher!"
-        
+        cell.postLabel.text = "In an unbalanced world where openness is jewelry; i'll be in the corner finding rhymes with a head thats cracked but full of dreams & colours."
+        cell.postLabel.sizeToFit()
         cell.postImage.image = UIImage(named: "profileImage")
         cell.postImage.layer.cornerRadius = cell.postImage.frame.height/2
         cell.selectionStyle = .none
@@ -54,9 +56,16 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     
-    func tableView(_ tableView: UITableView,  heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(postTableView.frame.height/2)
-    }
+//    func tableView(_ tableView: UITableView,  heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return CGFloat(postTableView.frame.height/2)
+//    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+            return CGFloat(220) //guide post
+        
+    }
     
 }
