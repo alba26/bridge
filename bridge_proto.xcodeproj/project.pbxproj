@@ -35,7 +35,8 @@
 		927921D62624061100455CC4 /* ViewControllerPostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921D12624061100455CC4 /* ViewControllerPostDetail.swift */; };
 		927921D72624061100455CC4 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927921D22624061100455CC4 /* CommentTableViewCell.xib */; };
 		927921D82624061100455CC4 /* ProfilePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */; };
-		927921E0262406DD00455CC4 /* tothebone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 927921DF262406DD00455CC4 /* tothebone.mp3 */; };
+		B348B3092626057B007C57F4 /* untitled.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B348B3082626057B007C57F4 /* untitled.mp3 */; };
+		B3D64F8D262542BB00B3D167 /* UserDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D64F8C262542BB00B3D167 /* UserDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +95,9 @@
 		927921D12624061100455CC4 /* ViewControllerPostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPostDetail.swift; sourceTree = "<group>"; };
 		927921D22624061100455CC4 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostTableViewCell.swift; sourceTree = "<group>"; };
-		927921DF262406DD00455CC4 /* tothebone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tothebone.mp3; sourceTree = "<group>"; };
+		B348B3082626057B007C57F4 /* untitled.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = untitled.mp3; sourceTree = "<group>"; };
 		B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
+		B3D64F8C262542BB00B3D167 /* UserDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,7 @@
 		92712216261FCE7C00C05819 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				927921DF262406DD00455CC4 /* tothebone.mp3 */,
+				B348B3082626057B007C57F4 /* untitled.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 		9273ECB2261ABA260041D50D /* bridge_proto */ = {
 			isa = PBXGroup;
 			children = (
+				B3D64F8B2625428800B3D167 /* Model */,
 				927921CE2624061100455CC4 /* Post Detail */,
 				92712216261FCE7C00C05819 /* Sound */,
 				3EA862F3261D9EBF00C43F66 /* ViewController */,
@@ -248,6 +251,14 @@
 				927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */,
 			);
 			path = "Post Detail";
+			sourceTree = "<group>";
+		};
+		B3D64F8B2625428800B3D167 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3D64F8C262542BB00B3D167 /* UserDummy.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +366,7 @@
 			files = (
 				927921C62624053D00455CC4 /* ProfileViewController.swift in Resources */,
 				9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */,
-				927921E0262406DD00455CC4 /* tothebone.mp3 in Resources */,
+				B348B3092626057B007C57F4 /* untitled.mp3 in Resources */,
 				3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */,
 				9260287826217F1100CE4956 /* SongWidget.xib in Resources */,
 				3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */,
@@ -393,6 +404,7 @@
 				927921D62624061100455CC4 /* ViewControllerPostDetail.swift in Sources */,
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
+				B3D64F8D262542BB00B3D167 /* UserDummy.swift in Sources */,
 				927921D52624061100455CC4 /* CommentTableViewCell.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
 				922A70A9262210670073612D /* SongWidget.swift in Sources */,

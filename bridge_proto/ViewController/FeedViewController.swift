@@ -48,7 +48,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return feedPostData.count
     }
     
     
@@ -57,13 +57,13 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
             
-            cell.nameLabel.text = "Felin"
-            cell.jobLabel.text = "Singer"
-            cell.postTimeLabel.text = "4 hours ago"
-            cell.postLabel.sizeToFit()
-            cell.postLabel.text = "In an unbalanced world where openness is jewelry; i'll be in the corner finding rhymes with a head thats cracked but full of dreams & colours."
-            
-            cell.postImage.image = UIImage(named: "profileImage")
+            let postDummy = feedPostData[indexPath.row]
+            cell.nameLabel.text = postDummy.name
+            cell.jobLabel.text = postDummy.profession
+            cell.postTimeLabel.text = postDummy.time
+            cell.postLabel.text = postDummy.post
+            cell.postImage.image = postDummy.photo
+
             cell.postImage.layer.cornerRadius = cell.postImage.frame.height/2
             cell.selectionStyle = .none
             
@@ -74,11 +74,21 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if feedPostData.count == 0 {
+            return nil
+        } else {
+            return indexPath
+        }
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let stryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = stryboard.instantiateViewController(withIdentifier: "postDetail")
         //        present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+       
+       
         
     }
 }

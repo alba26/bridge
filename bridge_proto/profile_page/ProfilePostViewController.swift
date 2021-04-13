@@ -36,7 +36,7 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return profilePostData.count
     }
     
     
@@ -44,12 +44,14 @@ extension ProfilePostViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
-        cell.nameLabel.text = "Pamungkas"
-        cell.jobLabel.text = "@pamungqas"
-        cell.postTimeLabel.text = "4 hours ago"
-        cell.postLabel.text = "In an unbalanced world where openness is jewelry; i'll be in the corner finding rhymes with a head thats cracked but full of dreams & colours."
+        
+        let postData = profilePostData[indexPath.row]
+        cell.nameLabel.text = postData.name
+        cell.jobLabel.text = postData.stageName
+        cell.postTimeLabel.text = postData.time
+        cell.postLabel.text = postData.post
         cell.postLabel.sizeToFit()
-        cell.postImage.image = UIImage(named: "profileImage")
+        cell.postImage.image = postData.photo
         cell.postImage.layer.cornerRadius = cell.postImage.frame.height/2
         cell.selectionStyle = .none
         

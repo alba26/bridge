@@ -30,16 +30,19 @@ extension CollectionTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
     
     //jumlah row
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return feedGuideData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "guideCell", for: indexPath) as! GuideCollectionViewCell
-        cell.guideImage.image = UIImage(named: "profileImage")
-        cell.guideLabel.text = "5 Tips Latihan Vokal ala Pamungkas"
-        cell.profileImage.image = UIImage(named: "profileImage")
+
+        let guidePost = feedGuideData[indexPath.row]
+        cell.guideImage.image = guidePost.backgroundPhoto
+        cell.guideLabel.text = guidePost.guideTitle
+        cell.profileImage.image = guidePost.photo
+
         cell.profileImage.layer.cornerRadius = cell.profileImage.frame.width/2
-        cell.unameLabel.text = "pamungqas"
+        cell.unameLabel.text = guidePost.name
         cell.guideView.layer.cornerRadius = 4
         cell.guideView.clipsToBounds = true
 
