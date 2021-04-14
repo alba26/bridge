@@ -52,7 +52,7 @@ class ProfileWorkspaceViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "songWidgetCell") as! SongWidget
-        cell.songName.text = "To the bone"
+        cell.songName.text = "Untiled"
         return cell
     }
     
