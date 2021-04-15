@@ -24,13 +24,15 @@ extension ProfileGuideViewController: UICollectionViewDelegateFlowLayout, UIColl
     
     //jumlah row
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return profileGuideData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "guideCell", for: indexPath) as! GuideCollectionViewCell
-        cell.guideImage.image = UIImage(named: "profileImage")
-        cell.guideLabel.text = "5 Tips Latihan Vokal ala Pamungkas"
+        
+        let guideData = profileGuideData[indexPath.row]
+        cell.guideImage.image = guideData.backgoundPhoto
+        cell.guideLabel.text = guideData.title
         cell.profileImage.isHidden = true
         cell.profileImage.layer.cornerRadius = cell.profileImage.frame.width/2
         cell.unameLabel.isHidden = true

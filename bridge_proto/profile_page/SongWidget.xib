@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songWidgetCell" rowHeight="163" id="ULq-io-xXM" customClass="SongWidget" customModule="bridge_proto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ULq-io-xXM" id="dfm-pR-fU1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nt-hj-32l">
+                        <rect key="frame" x="15" y="10" width="384" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rHk-7X-5nj">
+                        <rect key="frame" x="13" y="62.5" width="388" height="65"/>
+                        <connections>
+                            <action selector="songSliderAnimation:" destination="ULq-io-xXM" eventType="valueChanged" id="lwr-jg-08j"/>
+                        </connections>
+                    </slider>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-AN-hZW">
+                        <rect key="frame" x="100" y="35.5" width="214" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ8-nq-gbk">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="22"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playSong:" destination="ULq-io-xXM" eventType="touchUpInside" id="gMf-a2-SG1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-Ph-u8e">
+                                <rect key="frame" x="130" y="0.0" width="84" height="22"/>
+                                <state key="normal" image="stop.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="stopSong:" destination="ULq-io-xXM" eventType="touchUpInside" id="DtD-ve-5qb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYp-JJ-1Z7">
+                        <rect key="frame" x="40" y="131.5" width="334" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="Color"/>
+                <color key="tintColor" name="AccentColor"/>
+                <constraints>
+                    <constraint firstItem="ZYp-JJ-1Z7" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leadingMargin" constant="20" id="7FP-d4-N7q"/>
+                    <constraint firstItem="LDP-AN-hZW" firstAttribute="top" secondItem="5nt-hj-32l" secondAttribute="bottom" constant="5" id="ApL-Fa-KJa"/>
+                    <constraint firstAttribute="trailing" secondItem="rHk-7X-5nj" secondAttribute="trailing" constant="15" id="HS5-Zx-RDo"/>
+                    <constraint firstAttribute="trailing" secondItem="LDP-AN-hZW" secondAttribute="trailing" constant="100" id="Leo-k3-AZG"/>
+                    <constraint firstAttribute="trailing" secondItem="5nt-hj-32l" secondAttribute="trailing" constant="15" id="SgG-XL-uZA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZYp-JJ-1Z7" secondAttribute="trailing" constant="20" id="Ugk-in-zWP"/>
+                    <constraint firstItem="5nt-hj-32l" firstAttribute="top" secondItem="dfm-pR-fU1" secondAttribute="top" constant="10" id="c2I-To-jpv"/>
+                    <constraint firstItem="5nt-hj-32l" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leading" constant="15" id="c5n-Fx-oBp"/>
+                    <constraint firstItem="rHk-7X-5nj" firstAttribute="top" secondItem="LDP-AN-hZW" secondAttribute="bottom" constant="5" id="ct4-RD-pg1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZYp-JJ-1Z7" secondAttribute="bottom" id="esm-4L-luM"/>
+                    <constraint firstItem="ZYp-JJ-1Z7" firstAttribute="top" secondItem="rHk-7X-5nj" secondAttribute="bottom" constant="5" id="j8m-AF-f92"/>
+                    <constraint firstItem="LDP-AN-hZW" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leading" constant="100" id="qp3-lO-fqE"/>
+                    <constraint firstItem="rHk-7X-5nj" firstAttribute="leading" secondItem="dfm-pR-fU1" secondAttribute="leading" constant="15" id="z7v-iN-W4z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playPauseButton" destination="FZ8-nq-gbk" id="T1E-jc-8sb"/>
+                <outlet property="songLength" destination="ZYp-JJ-1Z7" id="8k7-H3-hgK"/>
+                <outlet property="songName" destination="5nt-hj-32l" id="G7N-6E-4d2"/>
+                <outlet property="songSlider" destination="rHk-7X-5nj" id="htT-oU-yrp"/>
+                <outlet property="stopButton" destination="Aqt-Ph-u8e" id="UBv-wE-9q2"/>
+            </connections>
+            <point key="canvasLocation" x="-159.42028985507247" y="52.566964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.96100002527236938" green="0.40000000596046448" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

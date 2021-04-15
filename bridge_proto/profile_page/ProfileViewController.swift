@@ -19,6 +19,14 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileWorkspace: UIView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden=true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden=false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         profileImage.layer.masksToBounds=true

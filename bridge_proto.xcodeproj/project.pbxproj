@@ -16,6 +16,10 @@
 		3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */; };
 		71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */; };
 		92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92117A27261C1F43002AE4AC /* ProfileViewController.swift */; };
+		922A70A9262210670073612D /* SongWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A70A8262210670073612D /* SongWidget.swift */; };
+		9260287826217F1100CE4956 /* SongWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9260287726217F1100CE4956 /* SongWidget.xib */; };
+		9271220A261FCAF700C05819 /* ProfileWorkspaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */; };
+		92712211261FCC4E00C05819 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9271220F261FCC4100C05819 /* AVFoundation.framework */; };
 		9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECB3261ABA260041D50D /* AppDelegate.swift */; };
 		9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECB5261ABA260041D50D /* SceneDelegate.swift */; };
 		9273ECB8261ABA260041D50D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECB7261ABA260041D50D /* ViewController.swift */; };
@@ -24,6 +28,15 @@
 		9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9273ECBE261ABA270041D50D /* LaunchScreen.storyboard */; };
 		9273ECCB261ABA270041D50D /* bridge_protoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECCA261ABA270041D50D /* bridge_protoTests.swift */; };
 		9273ECD6261ABA270041D50D /* bridge_protoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */; };
+		927921B32624041200455CC4 /* ProfilePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921B22624041200455CC4 /* ProfilePostViewController.swift */; };
+		927921C62624053D00455CC4 /* ProfileViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 92117A27261C1F43002AE4AC /* ProfileViewController.swift */; };
+		927921D42624061100455CC4 /* ProfilePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927921CF2624061100455CC4 /* ProfilePostTableViewCell.xib */; };
+		927921D52624061100455CC4 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921D02624061100455CC4 /* CommentTableViewCell.swift */; };
+		927921D62624061100455CC4 /* ViewControllerPostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921D12624061100455CC4 /* ViewControllerPostDetail.swift */; };
+		927921D72624061100455CC4 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927921D22624061100455CC4 /* CommentTableViewCell.xib */; };
+		927921D82624061100455CC4 /* ProfilePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */; };
+		B348B3092626057B007C57F4 /* untitled.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B348B3082626057B007C57F4 /* untitled.mp3 */; };
+		B3D64F8D262542BB00B3D167 /* UserDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D64F8C262542BB00B3D167 /* UserDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D42E6D02620085100A322D9 /* ViewControllerPostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPostDetail.swift; sourceTree = "<group>"; };
+		3D42E6D82620089100A322D9 /* ProfilePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostTableViewCell.swift; sourceTree = "<group>"; };
+		3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePostTableViewCell.xib; sourceTree = "<group>"; };
+		3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		3EA862F7261D9F1A00C43F66 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		3EA862F8261D9F1A00C43F66 /* GuideCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideCollectionViewCell.xib; sourceTree = "<group>"; };
 		3EA862FA261D9F1A00C43F66 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +71,10 @@
 		3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGuideViewController.swift; sourceTree = "<group>"; };
 		92117A27261C1F43002AE4AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		922A70A8262210670073612D /* SongWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongWidget.swift; sourceTree = "<group>"; };
+		9260287726217F1100CE4956 /* SongWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongWidget.xib; sourceTree = "<group>"; };
+		92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorkspaceViewController.swift; sourceTree = "<group>"; };
+		9271220F261FCC4100C05819 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9273ECB0261ABA260041D50D /* bridge_proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bridge_proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9273ECB3261ABA260041D50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9273ECB5261ABA260041D50D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +89,15 @@
 		9273ECD1261ABA270041D50D /* bridge_protoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bridge_protoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9273ECD5261ABA270041D50D /* bridge_protoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridge_protoUITests.swift; sourceTree = "<group>"; };
 		9273ECD7261ABA270041D50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927921B22624041200455CC4 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
+		927921CF2624061100455CC4 /* ProfilePostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePostTableViewCell.xib; sourceTree = "<group>"; };
+		927921D02624061100455CC4 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		927921D12624061100455CC4 /* ViewControllerPostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPostDetail.swift; sourceTree = "<group>"; };
+		927921D22624061100455CC4 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostTableViewCell.swift; sourceTree = "<group>"; };
+		B348B3082626057B007C57F4 /* untitled.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = untitled.mp3; sourceTree = "<group>"; };
+		B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
+		B3D64F8C262542BB00B3D167 /* UserDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92712211261FCC4E00C05819 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +144,30 @@
 		92117A26261C1F19002AE4AC /* profile_page */ = {
 			isa = PBXGroup;
 			children = (
+				927921B22624041200455CC4 /* ProfilePostViewController.swift */,
 				92117A27261C1F43002AE4AC /* ProfileViewController.swift */,
 				71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */,
+				92712209261FCAF700C05819 /* ProfileWorkspaceViewController.swift */,
+				9260287726217F1100CE4956 /* SongWidget.xib */,
+				922A70A8262210670073612D /* SongWidget.swift */,
 			);
 			path = profile_page;
+			sourceTree = "<group>";
+		};
+		9271220E261FCC4100C05819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9271220F261FCC4100C05819 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92712216261FCE7C00C05819 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B348B3082626057B007C57F4 /* untitled.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		9273ECA7261ABA260041D50D = {
@@ -125,6 +177,8 @@
 				9273ECC9261ABA270041D50D /* bridge_protoTests */,
 				9273ECD4261ABA270041D50D /* bridge_protoUITests */,
 				9273ECB1261ABA260041D50D /* Products */,
+				9271220E261FCC4100C05819 /* Frameworks */,
+				927921A02624037500455CC4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +195,9 @@
 		9273ECB2261ABA260041D50D /* bridge_proto */ = {
 			isa = PBXGroup;
 			children = (
+				B3D64F8B2625428800B3D167 /* Model */,
+				927921CE2624061100455CC4 /* Post Detail */,
+				92712216261FCE7C00C05819 /* Sound */,
 				3EA862F3261D9EBF00C43F66 /* ViewController */,
 				92117A26261C1F19002AE4AC /* profile_page */,
 				9273ECB3261ABA260041D50D /* AppDelegate.swift */,
@@ -169,6 +226,39 @@
 				9273ECD7261ABA270041D50D /* Info.plist */,
 			);
 			path = bridge_protoUITests;
+			sourceTree = "<group>";
+		};
+		927921A02624037500455CC4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3D42E6D02620085100A322D9 /* ViewControllerPostDetail.swift */,
+				3D42E6D82620089100A322D9 /* ProfilePostTableViewCell.swift */,
+				B3BA689326236D8E005042F9 /* ProfilePostViewController.swift */,
+				3D42E6DF2620091700A322D9 /* CommentTableViewCell.swift */,
+				3D42E6D92620089100A322D9 /* ProfilePostTableViewCell.xib */,
+				3D42E6E02620091700A322D9 /* CommentTableViewCell.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		927921CE2624061100455CC4 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				927921CF2624061100455CC4 /* ProfilePostTableViewCell.xib */,
+				927921D02624061100455CC4 /* CommentTableViewCell.swift */,
+				927921D12624061100455CC4 /* ViewControllerPostDetail.swift */,
+				927921D22624061100455CC4 /* CommentTableViewCell.xib */,
+				927921D32624061100455CC4 /* ProfilePostTableViewCell.swift */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
+		B3D64F8B2625428800B3D167 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3D64F8C262542BB00B3D167 /* UserDummy.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +364,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927921C62624053D00455CC4 /* ProfileViewController.swift in Resources */,
 				9273ECC0261ABA270041D50D /* LaunchScreen.storyboard in Resources */,
+				B348B3092626057B007C57F4 /* untitled.mp3 in Resources */,
 				3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */,
+				9260287826217F1100CE4956 /* SongWidget.xib in Resources */,
 				3EA862FE261D9F1A00C43F66 /* GuideCollectionViewCell.xib in Resources */,
 				9273ECBD261ABA270041D50D /* Assets.xcassets in Resources */,
 				9273ECBB261ABA260041D50D /* Main.storyboard in Resources */,
+				927921D72624061100455CC4 /* CommentTableViewCell.xib in Resources */,
 				3EA862FD261D9F1A00C43F66 /* PostTableViewCell.xib in Resources */,
+				927921D42624061100455CC4 /* ProfilePostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,15 +399,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927921B32624041200455CC4 /* ProfilePostViewController.swift in Sources */,
 				71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */,
+				927921D62624061100455CC4 /* ViewControllerPostDetail.swift in Sources */,
 				9273ECB8261ABA260041D50D /* ViewController.swift in Sources */,
 				92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */,
+				B3D64F8D262542BB00B3D167 /* UserDummy.swift in Sources */,
+				927921D52624061100455CC4 /* CommentTableViewCell.swift in Sources */,
 				3EA86302261D9F1A00C43F66 /* PostTableViewCell.swift in Sources */,
+				922A70A9262210670073612D /* SongWidget.swift in Sources */,
+				9271220A261FCAF700C05819 /* ProfileWorkspaceViewController.swift in Sources */,
 				9273ECB4261ABA260041D50D /* AppDelegate.swift in Sources */,
 				3EA86300261D9F1A00C43F66 /* FeedViewController.swift in Sources */,
 				9273ECB6261ABA260041D50D /* SceneDelegate.swift in Sources */,
 				3EA86301261D9F1A00C43F66 /* GuideCollectionViewCell.swift in Sources */,
 				3EA8631B261DC48500C43F66 /* CollectionTableViewCell.swift in Sources */,
+				927921D82624061100455CC4 /* ProfilePostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +591,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G7629G4PP;
+				DEVELOPMENT_TEAM = ZKQC9G2J9U;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G7629G4PP;
+				DEVELOPMENT_TEAM = ZKQC9G2J9U;
 				INFOPLIST_FILE = bridge_proto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
