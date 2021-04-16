@@ -24,7 +24,7 @@ class SongWidget: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         songLength.isHidden = true
-        let sound = Bundle.main.path(forResource: "untitled", ofType: "mp3")
+        let sound = Bundle.main.path(forResource: "kena-mental", ofType: "mp3")
         
         do{
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))

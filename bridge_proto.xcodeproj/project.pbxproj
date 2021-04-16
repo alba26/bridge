@@ -15,6 +15,7 @@
 		3EA8631B261DC48500C43F66 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA86319261DC48500C43F66 /* CollectionTableViewCell.swift */; };
 		3EA8631C261DC48500C43F66 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */; };
 		71721947261EB69C00A080E8 /* ProfileGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */; };
+		71744E5B2629201D00C81998 /* kena-mental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71744E5A2629201D00C81998 /* kena-mental.mp3 */; };
 		92117A28261C1F43002AE4AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92117A27261C1F43002AE4AC /* ProfileViewController.swift */; };
 		922A70A9262210670073612D /* SongWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A70A8262210670073612D /* SongWidget.swift */; };
 		9260287826217F1100CE4956 /* SongWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9260287726217F1100CE4956 /* SongWidget.xib */; };
@@ -70,6 +71,7 @@
 		3EA86319261DC48500C43F66 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		3EA8631A261DC48500C43F66 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		71721946261EB69C00A080E8 /* ProfileGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGuideViewController.swift; sourceTree = "<group>"; };
+		71744E5A2629201D00C81998 /* kena-mental.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kena-mental.mp3"; sourceTree = "<group>"; };
 		92117A27261C1F43002AE4AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		922A70A8262210670073612D /* SongWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongWidget.swift; sourceTree = "<group>"; };
 		9260287726217F1100CE4956 /* SongWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongWidget.xib; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		92712216261FCE7C00C05819 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				71744E5A2629201D00C81998 /* kena-mental.mp3 */,
 				B348B3082626057B007C57F4 /* untitled.mp3 */,
 			);
 			path = Sound;
@@ -374,6 +377,7 @@
 				9273ECBB261ABA260041D50D /* Main.storyboard in Resources */,
 				927921D72624061100455CC4 /* CommentTableViewCell.xib in Resources */,
 				3EA862FD261D9F1A00C43F66 /* PostTableViewCell.xib in Resources */,
+				71744E5B2629201D00C81998 /* kena-mental.mp3 in Resources */,
 				927921D42624061100455CC4 /* ProfilePostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
